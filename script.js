@@ -9,7 +9,7 @@ const sliderContent = document.querySelector('.slider-content');
 
 
 let currentImg = 1
-let sliderTextActive = {
+const sliderTextActive = {
     1: {
         text: "Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.",
         author: "Іван Петренко",
