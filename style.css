@@ -1,0 +1,155 @@
+body {
+    background: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.slider-card {
+    max-width: 1700px;
+    margin: 40px auto 0 auto;
+    background: #f7f8fc;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    box-shadow: 0 6px 36px 0 #144a9212;
+    position: relative;
+}
+
+.slider-btn {
+    background: #28a8ff;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 24px;
+    transition: background 0.2s;
+}
+
+.slider-btn:active {
+    background: #007dd1;
+}
+
+.slider-content {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.slider-photo img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 32px;
+}
+
+.slider-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    padding: 0 24px 0 0;
+    flex: 1;
+}
+
+.slider-team {
+    color: #1993d1;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.slider-text {
+    color: #f25b86;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.slider-author {
+    color: #b0b0c3;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.author-name {
+    color: #a2a2b3;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.author-role {
+    font-size: 22px;
+    color: #b0b0c3;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 10px;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #e6f0fd;
+    display: inline-block;
+}
+
+.dot.active {
+    background: #28a8ff;
+}
+
+.slider-btn.disabled {
+    background: #d1e2ef;
+    color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.7;
+    pointer-events: none;
+    /* Можно добавить, чтобы нельзя было кликать */
+}
+
+
+@media (max-width: 900px) {
+    .slider-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 8px;
+    }
+
+    .slider-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-photo img {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .slider-info {
+        padding: 0;
+    }
+
+    .slider-text {
+        font-size: 30px;
+    }
+
+    .slider-btn {
+        margin: 12px auto;
+    }
+
+}
