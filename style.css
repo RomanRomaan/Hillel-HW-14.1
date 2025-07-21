@@ -105,6 +105,7 @@ body {
     border-radius: 50%;
     background: #e6f0fd;
     display: inline-block;
+    cursor: pointer;
 }
 
 .dot.active {
@@ -120,6 +121,15 @@ body {
 
 }
 
+.slider-content {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+
+.slider-content.fade-out {
+    opacity: 0;
+}
 
 @media (max-width: 900px) {
     .slider-card {
